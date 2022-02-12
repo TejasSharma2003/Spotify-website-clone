@@ -1,0 +1,64 @@
+:root
+{
+    --menuwidth:100%;
+    --menuheight:10px;
+}
+
+.container
+{
+    width:30px;
+    height:30px;
+    /* border:2px solid #fff; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    padding:0rem .2rem;
+    cursor: pointer;
+}
+
+.menu
+{
+    width:25px;
+    height:4px;
+    border-radius:3px;
+    background-color:#fff;
+    transition:all .3s ease-in-out;
+}
+.menu::after,.menu::before
+{
+    content:'';
+    /* display:block; */
+    width:25px;
+    position: absolute;
+    height:4px;
+    border-radius:3px;
+    transition:all .3s ease-in-out;
+    background-color:#fff;
+}
+.menu::after
+{
+    transform: translateY(8px);
+
+
+}
+.menu::before
+{
+    transform:translateY(-8px);
+
+}
+.open
+{
+    transform: translateX(10px);
+    background-color:transparent;
+
+}
+.open::after
+{
+    transform:rotate(45deg) translate(-10px,10px);
+
+}
+.open::before
+{
+    transform:rotate(-45deg) translate(-10px,-10px);
+}

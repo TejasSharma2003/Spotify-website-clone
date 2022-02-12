@@ -1,0 +1,64 @@
+
+.payment-section
+{
+    background-image: url("https://www.scdn.co/i/free/bubbles-dktp.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    position:relative;
+    margin:3rem 0rem 4rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #000; */
+}
+/* .phone-svg::before
+{
+    content:url("https://i.scdn.co/image/ab678e040000ed3ae21e83c79ebd4e3d5083bcf0");
+    width:30px;
+    position:absolute;
+    left:0;
+    display:block;
+} */
+.phone-img-div
+{
+    position:relative;
+}
+.phone-img
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 2px;
+    transform: scale(0.9,1);
+    top:10%;
+
+}
+.free::before
+{
+    content:'';
+    height: 20%;
+    position: absolute;
+    top: -20%;
+    z-index: 23;
+    width: 100%;
+    background: linear-gradient(transparent, rgb(176, 35, 194));
+}
+.free
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding:3.5rem 0;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    width:100%;
+    max-width:600px ;
+    position:absolute;
+    bottom:-15%;
+}
+.free >h1
+{
+    color:#fff;
+    padding:0.2rem;
+}

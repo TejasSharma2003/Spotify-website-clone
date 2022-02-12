@@ -1,0 +1,35 @@
+.line
+{
+    position:relative;
+
+}
+.line::before
+{
+    content:'';
+    position:absolute;
+    background-color:#fff;
+    width:20px;
+    height:2px;
+    top:0;
+}
+.menu-spotify-logo
+{
+    position:relative;
+    /* bottom:6rem; */
+    bottom:-14rem;
+    cursor:pointer;
+    /* left:2rem; */
+    white-space:nowrap;
+    transition:all 0.5s ease;
+    max-width:100px;
+}
+.fillup
+{
+    fill:#fff;
+    transition:all 0.5s ease;
+}
+.filldown
+{
+    fill:#000;
+    transition:all 0.5s ease;
+}
