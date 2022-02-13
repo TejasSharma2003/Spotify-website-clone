@@ -1,0 +1,164 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+.box-margin
+{
+    margin:1.4rem 0rem;
+}
+.footer-lis > li
+{
+    list-style: none;
+    color:#fff;
+    font-size:.9rem;
+    line-height:2.5;
+    cursor:pointer;
+}
+
+.footer-lis > li:hover
+{
+    color:#1ed760;
+
+}
+.footer-ps
+{
+    margin-bottom:1rem;
+    font-weight: 600;
+    font-size:0.9rem;
+    color:#919496;
+}
+.handles-info
+{
+    /* background-color:yellow; */
+    /* padding-bottom:5rem; */
+    position:relative;
+}
+.icon
+{
+    color:#fff;
+}
+.icon-div
+{
+    display:flex;
+    justify-content:column;
+    align-items:center;
+    background-color:#222326;
+    padding:.5rem;
+    border-radius:50px;
+    margin-right:.8rem;
+    cursor:pointer;
+    
+}
+.icon:hover
+{
+    color:#1ed760;
+}
+
+.language-year-div
+{
+    display:flex;
+    justify-content:space-between;
+    padding-top:2rem    ;
+}
+
+.content-language
+{
+    display:flex;
+    /* align-items:; */
+    text-align:right;
+    flex-direction: column;
+}
+
+.content-language span
+{
+    /* margin-left: auto; */
+    color:#919496;
+    /* display:block; */
+    font-size:.7rem;
+}
+
+.terms-div span
+{
+    color:#fff;
+    font-size:.7rem;
+    margin: 0 .4rem;
+    margin-bottom:1rem; 
+    cursor:pointer;
+    color:#919496
+}
+
+
+.terms-div span:hover
+{
+    color:#1ed760;
+ 
+}
+.terms-div
+{
+    display:flex;
+    
+    flex-direction:column;
+    padding-right:0 2rem;
+}
+.content-language-child
+{
+    display:flex;
+    align-items:center;
+    margin-bottom:0.4rem;
+}
+.public
+{
+    color:#919496;
+    margin:2px;
+}
+@media screen and (min-width: 500px){
+    .terms-div 
+    {
+        flex-direction:row;
+        align-items:end;   
+
+    }
+    .terms-div span
+    {
+        margin-bottom:0;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .max-width-footer-items
+    {
+        max-width: 750px;
+        margin: auto;
+        
+    }
+    .language-year-div
+    {
+        max-width:750px;
+        margin:auto;
+    }
+    
+}
+
+@media screen and (min-width: 1150px) {
+    .max-width-footer-items
+    {
+        display:flex;
+        max-width: 1000px;
+    }
+    .handles-info
+    {
+        padding-top:2rem;
+    }
+    .language-year-div
+    {
+        max-width: 1000px;
+    }
+    
+}

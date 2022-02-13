@@ -53,7 +53,6 @@
     padding:3.5rem 0;
     background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
     width:100%;
-    max-width:600px ;
     position:absolute;
     bottom:-15%;
 }
@@ -61,4 +60,44 @@
 {
     color:#fff;
     padding:0.2rem;
+    text-align: center;
+}
+
+
+@media screen and  (min-width:750px)
+{
+    .phone-img-div
+    {
+        display:none;
+    }
+    .free::before
+    {
+        display:none;
+    }
+    .free
+    {
+        padding:4rem 0;
+        position:static;
+    }
+    .payment-section
+    {
+        margin-bottom:3rem;
+    }
+    .free h1
+    {
+        font-size:2.3rem;
+    }
+}
+
+
+@media screen and (min-width:1150px)
+{
+    .free
+    {
+        padding:10rem 0rem;
+    }
+    .free h1
+    {
+        font-size:2.9rem;
+    }
 }

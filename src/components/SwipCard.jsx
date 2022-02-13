@@ -3,14 +3,14 @@ import styled from "styled-components"
 import '../styles/line.css'
 
 const Card=styled.div`
-    
     background-color:#000;
     height:100vh;
     position:absolute;
     overflow-y:hidden;
     right:0;
     transition:all 0.3s
- ease-in-out;
+    ease-in-out;
+    z-index:1000;
 `
 
 const CardFeature=styled.div`
@@ -32,6 +32,10 @@ const FirstChild=styled.h1`
     {
         color:#1ed760;
     }
+    @media screen and (min-width:750px)
+    {
+        font-size:1.9rem;
+    }
 `
 const SecondChild=styled.h1`
 
@@ -44,6 +48,10 @@ const SecondChild=styled.h1`
     &:hover
     {
         color:#1ed760;
+    }
+    @media screen and (min-width:750px)
+    {
+        font-size:1.9rem;
     }
     
 `
@@ -59,6 +67,10 @@ const ThirdChild=styled.h1`
     {
         color:#1ed760;
     }
+    @media screen and (min-width:750px)
+    {
+        font-size:1.9rem;
+    }
     
 `
 
@@ -73,6 +85,10 @@ const FourthChild=styled.h1`
     &:hover
     {
         color:#1ed760;
+    }
+    @media screen and (min-width:750px)
+    {
+        font-size:1.7rem;
     }
 
 
@@ -90,18 +106,21 @@ const FifthChild=styled.h1`
     {
         color:#1ed760;
     }
+    @media screen and (min-width:750px)
+    {
+        font-size:1.7rem;
+    }
     
 `
 
 function SwipCard({statusClick}) {
 
   return (
-      <Card style={{width:statusClick?'80%':'0'}}>
+      <Card style={{width:statusClick?'340px':'0'} }>
           <CardFeature>
-              <FirstChild style={{paddingLeft:statusClick?'.3rem':'2rem'}}>Premium</FirstChild>
-              <SecondChild style={{paddingLeft:statusClick?'.3rem':'5rem'}}>Support</SecondChild>
-              <ThirdChild style={{paddingLeft:statusClick?'.3rem':'7rem'}}>Download</ThirdChild>
-
+              <FirstChild  style={{paddingLeft:statusClick?'.3rem':'2rem'}}>Premium</FirstChild>
+              <SecondChild  style={{paddingLeft:statusClick?'.3rem':'5rem'}}>Support</SecondChild>
+              <ThirdChild  style={{paddingLeft:statusClick?'.3rem':'7rem'}}>Download</ThirdChild>
               <FourthChild className="line" style={{paddingLeft:statusClick?'.3rem':'9rem'}}>Account</FourthChild>
               <FifthChild style={{paddingLeft:statusClick?'.3rem':'11rem'}}>Log out</FifthChild>
 

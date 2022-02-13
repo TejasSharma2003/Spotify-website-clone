@@ -6,6 +6,8 @@ import Features from "./components/Features"
 import { createGlobalStyle } from 'styled-components'
 import Payment from "./components/Payment"
 import Question from "./components/Question"
+import Ready from "./components/Ready"
+import Footer from "./components/Footer"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -30,6 +32,8 @@ function App() {
       <Features/>
       <Payment/>
       <Question/>
+      <Ready/>
+      <Footer/>
     </>
 
   );
